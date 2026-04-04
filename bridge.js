@@ -160,7 +160,13 @@ async function initWhatsApp() {
       session: "monitor-session",
       autoClose: false,
       logQR: true,
-      headless: false
+      headless: true,
+      catchQR: (base64Qr, asciiQR) => {
+        console.log(asciiQR);
+      },
+      puppeteerOptions: {
+        args: ["--no-sandbox", "--disable-setuid-sandbox"]
+      }
     });
 
     whatsappClient = client;
