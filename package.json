@@ -1,0 +1,20 @@
+{
+  "name": "telegram-whatsapp-bridge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@wppconnect-team/wppconnect": "^1.41.1",
+    "dotenv": "^17.4.0",
+    "node-telegram-bot-api": "^0.67.0",
+    "puppeteer": "^24.40.0",
+    "sharp": "^0.34.5"
+  }
+}
